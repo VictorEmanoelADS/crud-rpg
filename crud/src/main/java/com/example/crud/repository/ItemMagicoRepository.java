@@ -1,4 +1,9 @@
 package com.example.crud.repository;
 
-public interface ItemMagicoRepository {
+import com.example.crud.model.ItemMagicoModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ItemMagicoRepository extends JpaRepository<ItemMagicoModel, Long> {
 }
